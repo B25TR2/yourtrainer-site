@@ -281,6 +281,11 @@
       .map { border: 1px dashed var(--deep-muted); border-radius: 18px; min-height: 280px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
       .map-placeholder { color: var(--deep-muted); margin: 0; }
       .map iframe { width: 100%; height: 100%; min-height: 280px; border: 0; display: block; }
+    
+      .price-per { font-size: .42em; font-weight: 700; color: var(--deep-muted); }
+      .map-link { margin: 12px 0 0; }
+      .map-link a { color: var(--accent); font-weight: 700; }
+      .map { border-style: solid; }
     </style>
 </head>
 <body>
@@ -387,17 +392,17 @@
         <div class="location-grid">
           <div class="location-info">
             <p>Sesi personal training offline di Unsri Gym. Chat dulu untuk atur jadwal dan bahas targetmu.</p>
-            <p class="price">Rp650rb</p>
-            <p class="price-note">Chat untuk detail sesi &amp; jadwal.</p>
+            <p class="price">Rp650rb <span class="price-per">/ 8 sesi</span></p>
+            <p class="price-note">Students Center Unsri Lt 2, Indralaya, Ogan Ilir.<br>Chat untuk detail &amp; jadwal.</p>
             <a class="button" href="https://wa.me/6288287269056" target="_blank" rel="noopener noreferrer">
               Tanya jadwal via WhatsApp
               <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 11h10.2l-4.6-4.6L12 5l7 7-7 7-1.4-1.4 4.6-4.6H5z"/></svg>
             </a>
           </div>
           <div class="map" id="gym-map">
-            <!-- MAP: tempel embed map Unsri Gym di sini -->
-            <p class="map-placeholder">Map menyusul</p>
+            <iframe title="Peta Unsri Gym" src="https://www.google.com/maps?q=unsri+gym+students+center+unsri+lt2+indralaya+ogan+ilir&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
+          <p class="map-link"><a href="https://maps.app.goo.gl/LdWLiaofJPKJcTQw9?g_st=ac" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a></p>
         </div>
       </div>
     </section>
